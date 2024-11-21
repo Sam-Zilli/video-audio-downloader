@@ -16,21 +16,21 @@ To install the required tools, you can use Homebrew (macOS/Linux package manager
 1. **Install `yt-dlp`:**
 
    ```bash
-   brew install yt-dlp```
+   brew install yt-dlp
 
 
 2. **Install ffmpeg**
 
    ```bash
-   brew install ffmpeg```
+   brew install ffmpeg
 
 
-### Running
+### Installation
 
-1. **Make the Script Executable**
+1. **Making it Executable:**
    
    ```bash
-  chmod +x download_audio.sh```
+   chmod +x download_audio.sh
 
 2. **Run the Script**
 
