@@ -35,7 +35,7 @@ To install the required tools, you can use Homebrew (macOS/Linux package manager
 2. **Run the Script**
 
    ```bash
-   ./download_audio.sh```
+   ./download_audio.sh
 
 
 
