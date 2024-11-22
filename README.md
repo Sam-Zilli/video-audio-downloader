@@ -30,12 +30,12 @@ To install the required tools, you can use Homebrew (macOS/Linux package manager
 1. **Making it Executable:**
    
    ```bash
-   chmod +x download_audio.sh
+   chmod +x downloader.sh
 
 2. **Run the Script**
 
    ```bash
-   ./download_audio.sh
+   ./downloader.sh
 
 
 
