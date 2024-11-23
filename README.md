@@ -31,7 +31,7 @@ To install the required tools, you can use Homebrew (macOS/Linux package manager
    brew install ffmpeg
 
 
-### Installation
+### Execution
 
 1. **Making it Executable:**
    
