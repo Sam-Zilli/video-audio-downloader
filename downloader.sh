@@ -1,11 +1,6 @@
 #!/bin/bash
 # List of YouTube URLs
-urls=("https://www.youtube.com/watch?v=iJ7TpJPGiCE"
-    "https://www.youtube.com/watch?v=VRCB3Mwf-3w"
-    "https://www.youtube.com/watch?v=xgCvUYuQdvw"
-    "https://www.youtube.com/watch?v=8lUylRDnmrE"
-    "https://www.youtube.com/watch?v=Ul7m2qpzYBk"
-    "https://www.youtube.com/watch?v=RjBJGXhHOOo")
+urls=("https://www.youtube.com/watch?v=Fj7SEIhPC6k&list=PLHO72XDWKOWHsW41NzyOCFQjzIVY3avEQ&index=5")
 
 # Loop through each URL and run yt-dlp command
 for url in "${urls[@]}"; do

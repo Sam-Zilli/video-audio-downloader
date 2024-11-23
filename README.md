@@ -1,5 +1,11 @@
 # YouTube Audio Downloader
 
+## Tips:
+Give it the url to a youtube playlist to download them all!
+
+
+## Description
+
 This is a simple Bash script that uses `yt-dlp` to download the best audio quality from a list of YouTube URLs and convert it into MP3 format using `ffmpeg`.
 
 ## Requirements
@@ -36,6 +42,3 @@ To install the required tools, you can use Homebrew (macOS/Linux package manager
 
    ```bash
    ./downloader.sh
-
-
-
