@@ -1,5 +1,5 @@
 # List of YouTube URLs
-urls=("https://www.youtube.com/watch?v=FO2_5Gq3_-g&list=PLSjH1IsWqdsAebmE-SqO082h8jcceHdV3")
+urls=("https://www.youtube.com/playlist?list=OLAK5uy_nyl3pH2twfGhgnBqNzQ9CopWY-jJ3czEs")
 
 # Ask the user where to save the file (append to the default directory if needed)
 echo "Enter the directory where you want to save the downloaded files:"
