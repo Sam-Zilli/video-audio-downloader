@@ -1,12 +1,15 @@
 # List of YouTube URLs
-urls=("https://www.youtube.com/playlist?list=OLAK5uy_nyl3pH2twfGhgnBqNzQ9CopWY-jJ3czEs")
+urls=("https://www.youtube.com/watch?v=aqppZxzDAd0&list=PLkSTRZEW8Aec6mOKrhMXjMqKlSNlJDtAq")
+
+# Find FFmpeg location
+FFMPEG_PATH=$(which ffmpeg 2>/dev/null || echo "")
 
 # Ask the user where to save the file (append to the default directory if needed)
 echo "Enter the directory where you want to save the downloaded files:"
 read -r custom_dir
 
 # Default download directory
-download_dir="/Users/sam/Desktop/video_audio_downloads/new_folder/"
+download_dir="/Users/sam/Desktop/video_audio_downloads/"
 
 # If the user provides a custom directory, append it to the default directory
 if [ -n "$custom_dir" ]; then
@@ -24,7 +27,7 @@ read -r choice
 for url in "${urls[@]}"; do
     if [ "$choice" -eq 1 ]; then
         echo "Downloading audio from: $url"
-        yt-dlp -f bestaudio --extract-audio --audio-format mp3 --ffmpeg-location /usr/local/bin/ffmpeg -o "$download_dir/%(title)s.%(ext)s" "$url"
+        yt-dlp -f bestaudio --extract-audio --audio-format mp3 ${FFMPEG_PATH:+--ffmpeg-location "$FFMPEG_PATH"} -o "$download_dir/%(title)s.%(ext)s" "$url"
         echo "Finished downloading audio: $url"
     elif [ "$choice" -eq 2 ]; then
         echo "Downloading audio + video from: $url"
