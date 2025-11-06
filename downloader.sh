@@ -20,7 +20,7 @@ fi
 mkdir -p "$download_dir"
 
 # Ask if the user wants audio-only or audio + video
-echo "Do you want to download audio only (1) or audio + video (2)? Enter 1 or 2:"
+echo "Do you want to download audio only (1) or audio + video (2)? Warning - video is slow... Enter 1 or 2:"
 read -r choice
 
 # Loop through each URL and run yt-dlp command based on the user's choice
